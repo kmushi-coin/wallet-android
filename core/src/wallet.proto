@@ -23,9 +23,9 @@
  * - To regenerate after editing, run: mvn generate-sources -DupdateProtobuf
  */
 
-package com.onix.core.protos;
+package com.kmushi.core.protos;
 
-option java_package = "com.onix.core.protos";
+option java_package = "com.kmushi.core.protos";
 
 option java_outer_classname = "Protos";
 

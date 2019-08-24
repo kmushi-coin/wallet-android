@@ -3,22 +3,22 @@
 
     <Preference android:title="@string/pref_title_exchange_rates" >
         <intent android:targetPackage="@string/app_package"
-            android:targetClass="com.onix.wallet.ui.ExchangeRatesActivity" />
+            android:targetClass="com.kmushi.wallet.ui.ExchangeRatesActivity" />
     </Preference>
 
     <Preference android:title="@string/title_activity_transaction_fees" >
         <intent android:targetPackage="@string/app_package"
-            android:targetClass="com.onix.wallet.ui.FeesSettingsActivity" />
+            android:targetClass="com.kmushi.wallet.ui.FeesSettingsActivity" />
     </Preference>
 
     <Preference android:title="@string/title_activity_show_seed" >
         <intent android:targetPackage="@string/app_package"
-            android:targetClass="com.onix.wallet.ui.ShowSeedActivity" />
+            android:targetClass="com.kmushi.wallet.ui.ShowSeedActivity" />
     </Preference>
 
     <Preference android:title="@string/pref_title_restore_wallet" >
         <intent android:targetPackage="@string/app_package"
-            android:targetClass="com.onix.wallet.ui.IntroActivity" />
+            android:targetClass="com.kmushi.wallet.ui.IntroActivity" />
     </Preference>
 
     <CheckBoxPreference
@@ -29,7 +29,7 @@
     <!--
     <Preference android:title="@string/title_activity_debugging" >
         <intent android:targetPackage="@string/app_package"
-            android:targetClass="com.onix.wallet.ui.DebuggingActivity" />
+            android:targetClass="com.kmushi.wallet.ui.DebuggingActivity" />
     </Preference>
     -->
 </PreferenceScreen>

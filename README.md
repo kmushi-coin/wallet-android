@@ -1,8 +1,8 @@
 
-Onixcoin Wallet
+KmushiCoin Wallet
 ===============
 
-The Onixcoin Wallet is a fork of Coinomi, where we can store our ONIX, without sacrificing security. Private keys are stored in your own device. Using the words or mnemonic phrases you get a master key that can be memorized or stored on paper and then recover your funds at any time.
+The KmushiCoin Wallet is a fork of Coinomi, where we can store our KTV, without sacrificing security. Private keys are stored in your own device. Using the words or mnemonic phrases you get a master key that can be memorized or stored on paper and then recover your funds at any time.
 
 ## Building the application
 

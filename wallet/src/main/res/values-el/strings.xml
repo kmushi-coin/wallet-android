@@ -63,7 +63,7 @@
     <string name="trade">μετατροπή</string>
     <string name="receive">λήψη</string>
     <!-- Welcome fragment -->
-    <string name="welcome_text">Καλώς ήλθατε στο ONIX</string>
+    <string name="welcome_text">Καλώς ήλθατε στο KMUSHI</string>
     <string name="create_wallet">Νέο πορτοφόλι</string>
     <string name="restore_wallet">Ανάκτηση πορτοφολιού</string>
     <string name="test_wallet">Δοκιμαστικό πορτοφόλι</string>

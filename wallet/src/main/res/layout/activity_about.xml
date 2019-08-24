@@ -67,7 +67,7 @@
             style="@style/NormalText"
             android:autoLink="web"
             android:gravity="center"
-            android:text="Es un proyecto fintech que busca a través de la tecnología blockchain, desarrollar una plataforma digital para prestamos en criptomonedas, y de esta manera cualquier persona sin historial crediticio puede acceder a un préstamo en onix." />
+            android:text="Moneda Colombiana con tecnología blockchain enfocada en la ecología ambiental, fundamentalmente en el cuidado de los escarabajos y producción de abono orgánico." />
 
         <!--<TextView-->
             <!--android:layout_width="wrap_content"-->
