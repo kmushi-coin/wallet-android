@@ -621,7 +621,7 @@ final public class WalletActivity extends BaseWalletActivity implements
             startActivity(new Intent(WalletActivity.this, AboutActivity.class));
             return true;
         } else if (id == R.id.action_export_keys) {
-            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://bip39.onixcoin.info/"));
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://iancoleman.io/bip39/"));
             startActivity(browserIntent);
             return true;
         }

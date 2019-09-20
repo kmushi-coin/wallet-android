@@ -508,8 +508,8 @@ public class CoinURITest {
         assertTrue(uri.isAddressRequest());
         assertNull(uri.getAddress());
         assertEquals(BTC, uri.getType());
-        assertEquals("https://onix.com", uri.getAddressRequestUri().toString());
-        assertEquals("https://onix.com?address=" + MAINNET_GOOD_ADDRESS,
+        assertEquals("https://tierravivaplanet.com", uri.getAddressRequestUri().toString());
+        assertEquals("https://tierravivaplanet.com?address=" + MAINNET_GOOD_ADDRESS,
                 uri.getAddressRequestUriResponse(MAINNET_GOOD_ADDRESS).toString());
 
         // Reply URI has path and query
@@ -517,8 +517,8 @@ public class CoinURITest {
         assertTrue(uri.isAddressRequest());
         assertNull(uri.getAddress());
         assertEquals(BTC, uri.getType());
-        assertEquals("https://onix.com/some-path?abc=xyz", uri.getAddressRequestUri().toString());
-        assertEquals("https://onix.com/some-path?abc=xyz&address=" + MAINNET_GOOD_ADDRESS,
+        assertEquals("https://tierravivaplanet.com/some-path?abc=xyz", uri.getAddressRequestUri().toString());
+        assertEquals("https://tierravivaplanet.com/some-path?abc=xyz&address=" + MAINNET_GOOD_ADDRESS,
                 uri.getAddressRequestUriResponse(MAINNET_GOOD_ADDRESS).toString());
 
         // Reply is a generic URI
@@ -540,8 +540,8 @@ public class CoinURITest {
         assertTrue(uri.isAddressRequest());
         assertNull(uri.getAddress());
         assertEquals(BTC_TEST, uri.getType());
-        assertEquals("https://onix.com", uri.getAddressRequestUri().toString());
-        assertEquals("https://onix.com?address=" + goodAddressStr,
+        assertEquals("https://tierravivaplanet.com", uri.getAddressRequestUri().toString());
+        assertEquals("https://tierravivaplanet.com?address=" + goodAddressStr,
                 uri.getAddressRequestUriResponse(goodAddressStr).toString());
 
         // NuBits
@@ -550,8 +550,8 @@ public class CoinURITest {
         assertTrue(uri.isAddressRequest());
         assertNull(uri.getAddress());
         assertEquals(NBT, uri.getType());
-        assertEquals("https://onix.com", uri.getAddressRequestUri().toString());
-        assertEquals("https://onix.com?address=" + goodAddressStr,
+        assertEquals("https://tierravivaplanet.com", uri.getAddressRequestUri().toString());
+        assertEquals("https://tierravivaplanet.com?address=" + goodAddressStr,
                 uri.getAddressRequestUriResponse(goodAddressStr).toString());
 
         // NuShares
@@ -560,8 +560,8 @@ public class CoinURITest {
         assertTrue(uri.isAddressRequest());
         assertNull(uri.getAddress());
         assertEquals(NSR, uri.getType());
-        assertEquals("https://onix.com", uri.getAddressRequestUri().toString());
-        assertEquals("https://onix.com?address=" + goodAddressStr,
+        assertEquals("https://tierravivaplanet.com", uri.getAddressRequestUri().toString());
+        assertEquals("https://tierravivaplanet.com?address=" + goodAddressStr,
                 uri.getAddressRequestUriResponse(goodAddressStr).toString());
     }
 
