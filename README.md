@@ -6,11 +6,11 @@ The KmushiCoin Wallet is a fork of Coinomi, where we can store our KTV, without 
 
 ## Building the application
 
-Install [Android Studio] (https://developer.android.com/studio/). Once it is
+Install [Android Studio](https://developer.android.com/studio/). Once it is
 running, wallet-android navigating to where you cloned or downloaded and selecting
-settings.gradle. When you have finished importing, click on the SDK Manager! [SDK Administrator] (https://developer.android.com/images/tools/sdk-manager-studio.png). You must install version 26 of the SDK.
+settings.gradle. When you have finished importing, click on the SDK Manager! [SDK Administrator](https://developer.android.com/images/tools/sdk-manager-studio.png). You must install version 26 of the SDK.
 
 <br/>
-Make sure you have JDK 8 installed before you build. You can get it [Here] (https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html). Once you have installed that, navigate to File> Project Structure> SDK Location and change the path from your current JDK to the path of the new JDK.
+Make sure you have JDK 8 installed before you build. You can get it [Here](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html). Once you have installed that, navigate to File> Project Structure> SDK Location and change the path from your current JDK to the path of the new JDK.
 
 
