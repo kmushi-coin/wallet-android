@@ -265,11 +265,11 @@ public class SwipeRefreshLayout extends ViewGroup {
     }
 
     /**
-     * @deprecated Use {@link #setColorSchemeResources(int, int, int, int)}
+     * @deprecated Use {@link #setColorSchemeResources(int, int}
      */
     @Deprecated
-    public void setColorScheme(int colorRes1, int colorRes2, int colorRes3, int colorRes4) {
-        setColorSchemeResources(colorRes1, colorRes2, colorRes3, colorRes4);
+    public void setColorScheme(int colorRes1, int colorRes2) {
+        setColorSchemeResources(colorRes1, colorRes2);
     }
 
     /**
@@ -277,11 +277,9 @@ public class SwipeRefreshLayout extends ViewGroup {
      * The first color will also be the color of the bar that grows in response
      * to a user swipe gesture.
      */
-    public void setColorSchemeResources(int colorRes1, int colorRes2, int colorRes3,
-                                        int colorRes4) {
+    public void setColorSchemeResources(int colorRes1, int colorRes2) {
         final Resources res = getResources();
-        setColorSchemeColors(res.getColor(colorRes1), res.getColor(colorRes2),
-                res.getColor(colorRes3), res.getColor(colorRes4));
+        setColorSchemeColors(res.getColor(colorRes1), res.getColor(colorRes2));
     }
 
     /**
@@ -289,9 +287,9 @@ public class SwipeRefreshLayout extends ViewGroup {
      * also be the color of the bar that grows in response to a user swipe
      * gesture.
      */
-    public void setColorSchemeColors(int color1, int color2, int color3, int color4) {
+    public void setColorSchemeColors(int color1, int color2) {
         ensureTarget();
-        mProgressBar.setColorScheme(color1, color2, color3, color4);
+        mProgressBar.setColorScheme(color1, color2);
     }
 
     /**
@@ -325,7 +323,7 @@ public class SwipeRefreshLayout extends ViewGroup {
     @Override
     public void draw(Canvas canvas) {
         super.draw(canvas);
-        mProgressBar.draw(canvas);
+      // mProgressBar.draw(canvas);
     }
 
     @Override

@@ -18,9 +18,9 @@ android {
         applicationId "com.kmushi.wallet"
         minSdkVersion 15
         targetSdkVersion 28
-        versionCode 5
-        versionName "1.0.7"
-        ndk.abiFilters 'armeabi-v7a','arm64-v8a','x86_64','x86'
+        versionCode 78
+        versionName "1.0.9"
+        ndk.abiFilters 'armeabi-v7a','arm64-v8a','x86_64','x86','armeabi','mips'
 
         // Enabling multidex support.
         multiDexEnabled true
@@ -95,20 +95,6 @@ dependencies {
 
     implementation 'org.slf4j:slf4j-jdk14:1.7.6'
     implementation 'com.squareup.okhttp:okhttp:2.3.0'
+    
 
 }
-
-//apply plugin: 'robolectric'
-
-//robolectric {
-//    include '**/*Test.class'
-//    exclude '**/espresso/**/*.class'
-//}
-
-//apply plugin: 'idea'
-
-//idea {
-//    module {
-//        testOutputDir = file('build/test-classes/debug')
-//    }
-//}

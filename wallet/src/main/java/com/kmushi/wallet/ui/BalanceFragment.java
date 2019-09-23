@@ -189,9 +189,7 @@ public class BalanceFragment extends WalletFragment implements LoaderCallbacks<L
         // Configure the refreshing colors
         swipeContainer.setColorSchemeResources(
                 R.color.progress_bar_color_1,
-                R.color.progress_bar_color_2,
-                R.color.progress_bar_color_3,
-                R.color.progress_bar_color_4);
+                R.color.progress_bar_color_2);
     }
 
     private void addHeaderAndFooterToList(LayoutInflater inflater, ViewGroup container, View view) {

@@ -37,10 +37,10 @@ import android.view.animation.Interpolator;
 final class SwipeProgressBar {
 
     // Default progress animation colors are grays.
-    private final static int COLOR1 = 0xB3000000;
-    private final static int COLOR2 = 0x80000000;
-    private final static int COLOR3 = 0x4d000000;
-    private final static int COLOR4 = 0x1a000000;
+    private final static int COLOR1 = 0x1a000000;
+    private final static int COLOR2 = 0x1a000000; //0x80000000
+    //private final static int COLOR3 = 0x4d000000;
+    //private final static int COLOR4 = 0x1a000000;
 
     // The duration of the animation cycle.
     private static final int ANIMATION_DURATION_MS = 2000;
@@ -61,8 +61,8 @@ final class SwipeProgressBar {
     // Colors used when rendering the animation,
     private int mColor1;
     private int mColor2;
-    private int mColor3;
-    private int mColor4;
+    //private int mColor3;
+   // private int mColor4;
     private View mParent;
 
     private Rect mBounds = new Rect();
@@ -71,8 +71,8 @@ final class SwipeProgressBar {
         mParent = parent;
         mColor1 = COLOR1;
         mColor2 = COLOR2;
-        mColor3 = COLOR3;
-        mColor4 = COLOR4;
+        //mColor3 = COLOR3;
+       // mColor4 = COLOR4;
     }
 
     /**
@@ -82,14 +82,12 @@ final class SwipeProgressBar {
      *
      * @param color1 Integer representation of a color.
      * @param color2 Integer representation of a color.
-     * @param color3 Integer representation of a color.
-     * @param color4 Integer representation of a color.
      */
-    void setColorScheme(int color1, int color2, int color3, int color4) {
+    void setColorScheme(int color1, int color2) {
         mColor1 = color1;
         mColor2 = color2;
-        mColor3 = color3;
-        mColor4 = color4;
+        //mColor3 = color3;
+        //mColor4 = color4;
     }
 
     /**
@@ -168,7 +166,7 @@ final class SwipeProgressBar {
                 // Radius of the circle is half of the screen.
                 float clearRadius = width / 2 * INTERPOLATOR.getInterpolation(pct);
                 mClipRect.set(cx - clearRadius, 0, cx + clearRadius, height);
-                canvas.saveLayerAlpha(mClipRect, 0, 0);
+//                canvas.saveLayerAlpha(mClipRect, 0, 0);
                 // Only draw the trigger if there is a space in the center of
                 // this refreshing view that needs to be filled in by the
                 // trigger. If the progress view is just still animating, let it
@@ -181,13 +179,13 @@ final class SwipeProgressBar {
                 canvas.drawColor(mColor1);
             } else {
                 if (rawProgress >= 0 && rawProgress < 25) {
-                    canvas.drawColor(mColor4);
+                    canvas.drawColor(mColor2);
                 } else if (rawProgress >= 25 && rawProgress < 50) {
                     canvas.drawColor(mColor1);
                 } else if (rawProgress >= 50 && rawProgress < 75) {
                     canvas.drawColor(mColor2);
                 } else {
-                    canvas.drawColor(mColor3);
+                    canvas.drawColor(mColor1);
                 }
             }
 
@@ -207,11 +205,11 @@ final class SwipeProgressBar {
             }
             if (rawProgress >= 25 && rawProgress <= 75) {
                 float pct = (((rawProgress - 25) * 2) / 100f);
-                drawCircle(canvas, cx, cy, mColor3, pct);
+                drawCircle(canvas, cx, cy, mColor1, pct);
             }
             if (rawProgress >= 50 && rawProgress <= 100) {
                 float pct = (((rawProgress - 50) * 2) / 100f);
-                drawCircle(canvas, cx, cy, mColor4, pct);
+                drawCircle(canvas, cx, cy, mColor2, pct);
             }
             if ((rawProgress >= 75 && rawProgress <= 100)) {
                 float pct = (((rawProgress - 75) * 2) / 100f);

@@ -47,6 +47,7 @@
         android:xlargeScreens="true" />
 
     <application
+        
         android:name="com.kmushi.wallet.WalletApplication"
         android:allowBackup="false"
         android:hardwareAccelerated="true"

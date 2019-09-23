@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "795102047039",
+    "firebase_url": "https://kmushi-wallet.firebaseio.com",
+    "project_id": "kmushi-wallet",
+    "storage_bucket": "kmushi-wallet.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:795102047039:android:e6bc1478f13bcfd6aac18a",
+        "android_client_info": {
+          "package_name": "com.kmushi.wallet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "795102047039-p6gfet7t92dlacjnc5qual70du7irqf7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kmushi.wallet",
+            "certificate_hash": "792be3003a094f6d0c7e6be5b63156736be188cb"
+          }
+        },
+        {
+          "client_id": "795102047039-merb4iut4q4sce21ud741i1b7r2hl711.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzpJTggLT4x-gaANbRspKJ29b-Oz6GZSQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "795102047039-merb4iut4q4sce21ud741i1b7r2hl711.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -149,9 +149,7 @@ public class OverviewFragment extends Fragment{
         // Configure the refreshing colors
         swipeContainer.setColorSchemeResources(
                 R.color.progress_bar_color_1,
-                R.color.progress_bar_color_2,
-                R.color.progress_bar_color_3,
-                R.color.progress_bar_color_4);
+                R.color.progress_bar_color_2);
 
         // Set a space in the end of the list
         View listFooter = new View(getActivity());
