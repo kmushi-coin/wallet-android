@@ -12,5 +12,3 @@ settings.gradle. When you have finished importing, click on the SDK Manager! [SD
 
 <br/>
 Make sure you have JDK 8 installed before you build. You can get it [Here](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html). Once you have installed that, navigate to File> Project Structure> SDK Location and change the path from your current JDK to the path of the new JDK.
-
-
