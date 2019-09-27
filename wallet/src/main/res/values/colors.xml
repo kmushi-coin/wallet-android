@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- http://www.google.com/design/spec/style/color.html#color-ui-color-application -->
-    <color name="primary_100">#e0b912</color>
-    <color name="primary_500" >#efbb00</color>
+    <color name="primary_100">#1AC785</color>
+    <color name="primary_500" >#C7511A</color>
     <color name="primary_600">#FF0000</color>
     <color name="primary_700">#0288D1</color>
     <color name="primary_800">#0277BD</color>
@@ -10,9 +10,9 @@
     <color name="accent">#0091EA</color>
 
     <color name="send_light">#FFECB3</color>
-    <color name="send_normal">#FF6F00</color>
+    <color name="send_normal">#7A2C08</color>
     <color name="receive_light">#B3E5FC</color>
-    <color name="receive_normal">#0277BD</color>
+    <color name="receive_normal">#007A6E</color>
 
     <color name="white">#FFFFFF</color>
     <color name="white_almost">#F3F3F3</color>
@@ -64,10 +64,10 @@
     <color name="scan_result_view">#b0000000</color>
     <color name="scan_result_dots">#c099cc00</color>
 
-    <color name="progress_bar_color_1">#7986CB</color>
-    <color name="progress_bar_color_2">#FFD54F</color>
-    <color name="progress_bar_color_3">#E57373</color>
-    <color name="progress_bar_color_4">#AED581</color>
+    <color name="progress_bar_color_1">#E57373</color> <!-- #7986CB -->
+    <color name="progress_bar_color_2">#AED581</color> <!-- #FFD54F -->
+    <color name="progress_bar_color_3">#fff</color>
+    <color name="progress_bar_color_4">#fff</color>
 
     <!-- progress bar -->
     <integer-array name="progress_bar_colors">

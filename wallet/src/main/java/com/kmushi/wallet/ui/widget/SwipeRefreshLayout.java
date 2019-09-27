@@ -323,7 +323,14 @@ public class SwipeRefreshLayout extends ViewGroup {
     @Override
     public void draw(Canvas canvas) {
         super.draw(canvas);
-      // mProgressBar.draw(canvas);
+
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.P){
+            // Do something for lollipop and above versions
+        } else if(android.os.Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.P){
+            // do something for phones running an SDK before lollipop
+            mProgressBar.draw(canvas);
+        }
+
     }
 
     @Override
