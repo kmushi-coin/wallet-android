@@ -18,8 +18,8 @@ android {
         applicationId "com.kmushi.wallet"
         minSdkVersion 15
         targetSdkVersion 28
-        versionCode 79 // 26/09/2019
-        versionName "1.1.0"
+        versionCode 80 // 07/04/2020
+        versionName "1.1.1"
         ndk.abiFilters 'armeabi-v7a','arm64-v8a','x86_64','x86','armeabi','mips'
 
         // Enabling multidex support.
@@ -42,7 +42,7 @@ android {
         }
     }
 
-    sourceSets {
+    sourceSets {    
         androidTest {
             setRoot('src/test')
         }

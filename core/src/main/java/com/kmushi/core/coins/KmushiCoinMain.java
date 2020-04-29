@@ -21,8 +21,8 @@ public class KmushiCoinMain extends PeerFamily {
         uriScheme = "kmushicoin";
         bip44Index = 754;
         unitExponent = 8;
-        feeValue = value(100000);
-        minNonDust = value(1000);
+        feeValue = value(100);
+        minNonDust = value(50);
         softDustLimit = value(100000);
         softDustPolicy = SoftDustPolicy.AT_LEAST_BASE_FEE_IF_SOFT_DUST_TXO_PRESENT;
         signedMessageHeader = toBytes("KmushiCoin Signed Message:\n");

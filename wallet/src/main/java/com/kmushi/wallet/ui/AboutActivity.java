@@ -1,6 +1,8 @@
 package com.kmushi.wallet.ui;
 
 import android.app.AlertDialog;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -40,4 +42,30 @@ public class AboutActivity extends BaseWalletActivity {
                 .setMessage(R.string.terms_of_service)
                 .setPositiveButton(R.string.button_ok, null).create().show();
     }
+
+    public void myFace(View view){
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/KmushiCoin/"));
+        startActivity(browserIntent);
+    }
+
+    public void myInstag(View view){
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.instagram.com/KmushiCoin/"));
+        startActivity(browserIntent);
+    }
+
+    public void myTwitt(View view){
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://twitter.com/KmushiCoin"));
+        startActivity(browserIntent);
+    }
+
+    public void myTeleg(View view){
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://t.me/KmushiCoin_Es"));
+        startActivity(browserIntent);
+    }
+
+    public void myDiscord(View view){
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://discord.gg/HNudRNK"));
+        startActivity(browserIntent);
+    }
+
 }

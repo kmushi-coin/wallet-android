@@ -99,7 +99,7 @@ public class ExchangeRatesProvider extends ContentProvider {
     private long cryptoToLocalLastUpdated = 0;
     private String lastCryptoCurrency = null;
 
-    private static final String BASE_URL = "https://tierravivaplanet.com/android/price";
+    private static final String BASE_URL = "https://kmushicoin.com/assets/price";
     private static final String TO_LOCAL_URL = BASE_URL + "/to-local/%s";
     private static final String TO_CRYPTO_URL = BASE_URL + "/to-crypto/%s";
     private static final String COINOMI_SOURCE = "https://github.com/kmushi-coin/wallet-android";
