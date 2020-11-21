@@ -90,16 +90,15 @@ public class Constants {
     public static final List<CoinAddress> DEFAULT_COINS_SERVERS = ImmutableList.of(
             new CoinAddress(KmushiCoinMain.get(),
                     new ServerAddress("electrumx1.kmushicoin.com", 50001),
-                    new ServerAddress("electrumx1.kmushicoin.com", 50002),
-                    new ServerAddress("electrumx2.kmushicoin.com", 50001),
-                    new ServerAddress("electrumx2.kmushicoin.com", 50002)
+                    new ServerAddress("electrumx2.kmushicoin.com", 50001)
+                    
             ),
             new CoinAddress(BitcoinMain.get(),
-                    new ServerAddress("btc-cce-1.Coinomi.net", 5001),
-                    new ServerAddress("btc-cce-2.Coinomi.net", 5001)),
+                        new ServerAddress("btc-1.indexer.coinomi.net", 5001),
+                        new ServerAddress("btc-2.indexer.coinomi.net", 5001)
             new CoinAddress(LitecoinMain.get(),
-                    new ServerAddress("ltc-cce-1.Coinomi.net", 5002),
-                    new ServerAddress("ltc-cce-2.Coinomi.net", 5002))
+                    new ServerAddress("ltc-1.indexer.coinomi.net", 5002),
+                    new ServerAddress("ltc-2.indexer.coinomi.net", 5002))
     );
 
     public static final HashMap<CoinType, Integer> COINS_ICONS;
@@ -112,8 +111,8 @@ public class Constants {
 
         COINS_BLOCK_EXPLORERS = new HashMap<CoinType, String>();
         COINS_BLOCK_EXPLORERS.put(CoinID.BITCOIN_MAIN.getCoinType(), "https://blockchain.info/tx/%s");
-        COINS_BLOCK_EXPLORERS.put(CoinID.LITECOIN_MAIN.getCoinType(), "http://ltc.blockr.io/tx/info/%s");
-        COINS_BLOCK_EXPLORERS.put(CoinID.KMUSHICOIN_MAIN.getCoinType(), "http://explorer.kmushicoin.com/tx/%s");
+        COINS_BLOCK_EXPLORERS.put(CoinID.LITECOIN_MAIN.getCoinType(), "https://live.blockcypher.com/ltc/tx/%s");
+        COINS_BLOCK_EXPLORERS.put(CoinID.KMUSHICOIN_MAIN.getCoinType(), "https://explorer.kmushicoin.com/tx/%s");
     }
 
     public static final CoinType DEFAULT_COIN = BitcoinMain.get();
