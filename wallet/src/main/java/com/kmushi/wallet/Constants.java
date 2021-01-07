@@ -96,6 +96,7 @@ public class Constants {
             new CoinAddress(BitcoinMain.get(),
                         new ServerAddress("btc-1.indexer.coinomi.net", 5001),
                         new ServerAddress("btc-2.indexer.coinomi.net", 5001)
+            ),
             new CoinAddress(LitecoinMain.get(),
                     new ServerAddress("ltc-1.indexer.coinomi.net", 5002),
                     new ServerAddress("ltc-2.indexer.coinomi.net", 5002))
