@@ -89,9 +89,7 @@ public class Constants {
     // TODO move to resource files
     public static final List<CoinAddress> DEFAULT_COINS_SERVERS = ImmutableList.of(
             new CoinAddress(KmushiCoinMain.get(),
-                    new ServerAddress("electrumx1.kmushicoin.com", 50001),
-                    new ServerAddress("electrumx2.kmushicoin.com", 50001)
-                    
+                    new ServerAddress("electrumx1.kmushicoin.com", 50001)                    
             ),
             new CoinAddress(BitcoinMain.get(),
                         new ServerAddress("btc-1.indexer.coinomi.net", 5001),
